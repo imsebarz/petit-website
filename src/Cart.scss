@@ -1,0 +1,37 @@
+.cart {
+  padding-top: 4em;
+}
+
+.checkout-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3em;
+}
+
+.checkout-left {
+  height: max-content;
+  background-color: white;
+  width: 50%;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  h1 {
+    text-align: center;
+    padding: 1em 0;
+  }
+}
+
+.checkout-rigth {
+  height: max-content;
+  background-color: white;
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  height: 100vh;
+  flex-direction: column;
+  padding: 10em 2em;
+}
