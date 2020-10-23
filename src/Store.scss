@@ -1,0 +1,20 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  padding-top: 5em;
+  height: 100%;
+}
+
+.left {
+  width: 30%;
+  padding: 1em;
+  background: white;
+  border-radius: 15px;
+  height: max-content;
+  margin: 6em 2em;
+}
+
+.store {
+  display: flex;
+}

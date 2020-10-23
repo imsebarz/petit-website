@@ -1,12 +1,16 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
+import { useStateValue } from "./CartContext";
+import { getSubtotal } from "./reducer";
 import "./Subtotal.scss";
 
 const Subtotal = () => {
+  const [{ basket }, dispatch] = useStateValue();
+
   return (
     <div className="subtotal">
       <CurrencyFormat
-        value={500 * 2}
+        value={getSubtotal(basket)}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}

@@ -4,6 +4,7 @@ import "./App.scss";
 import Header from "./Header";
 import Home from "./Home";
 import Cart from "./Cart";
+import Store from "./Store";
 
 function App() {
   return (
@@ -20,10 +21,15 @@ function App() {
           <Route path="/contacto">
             <h1>Inofrmacion de contacyp</h1>
           </Route>
+          <Route path="/acerca">
+            <h1>I'm on ABOUT</h1>
+          </Route>
           <Route path="/login">
             <h1>I'm on LOGIN</h1>
           </Route>
-          <Route path="/tienda"></Route>
+          <Route path="/tienda">
+            <Store></Store>
+          </Route>
           <Route path="/">
             <Home></Home>
           </Route>

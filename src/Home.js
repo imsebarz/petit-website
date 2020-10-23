@@ -12,31 +12,35 @@ const Home = () => {
           alt=""
         />
       </div>
-      <h1 className="title">Productos más vendidos</h1>
+      <h1 className="title">Los preferidos</h1>
       <div className="row">
         <Product
           title="El Elegante"
-          price="20.000"
+          price={20000}
           description="Alguna cajita de macarons bien sabrosa"
           img="holi.jpg"
+          id="1"
         ></Product>{" "}
         <Product
           title="El Alegre"
-          price="20.000"
+          price={20000}
           description="Alguna cajita de macarons bien sabrosa"
           img="como.jpg"
+          id="2"
         ></Product>{" "}
         <Product
           title="El fresco"
-          price="20.000"
+          price={20000}
           description="Alguna cajita de macarons bien sabrosa"
           img="estas.jpg"
+          id="3"
         ></Product>
         <Product
           title="El Ligero"
-          price="20.000"
+          price={20000}
           description="Alguna cajita de macarons bien sabrosa"
           img="bien.jpg"
+          id="4"
         ></Product>
       </div>
       <div className="banner">

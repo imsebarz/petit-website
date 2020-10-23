@@ -3,14 +3,20 @@ import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./Header.scss";
+import { useStateValue } from "./CartContext";
 
 function Header() {
+  const [{ basket }, dispatch] = useStateValue();
+
   return (
     <nav className="navbar">
       <Link to="/">
         <h1 className="logo">Petit</h1>
       </Link>
       <ul className="navbar-links">
+        <Link to="/acerca">
+          <li>Acerca de Nosotros</li>
+        </Link>
         <Link to="/tienda">
           <li>Macarons</li>
         </Link>
@@ -29,6 +35,7 @@ function Header() {
           <Link to="/carrito">
             <li>
               <ShoppingCartIcon></ShoppingCartIcon>
+              {basket.length}
             </li>
           </Link>
         </div>

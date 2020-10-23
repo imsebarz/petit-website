@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.scss";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { CartProvider } from "./CartContext";
+import reducer, { initialState } from "./reducer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CartProvider reducer={reducer} initialState={initialState}>
+      <App />
+    </CartProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
