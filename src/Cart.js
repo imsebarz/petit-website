@@ -2,11 +2,10 @@ import React from "react";
 import "./Cart.scss";
 import { useStateValue } from "./CartContext";
 import CartProduct from "./CartProduct";
-import Product from "./Product";
 import Subtotal from "./Subtotal";
 
 const Cart = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
   return (
     <div className="cart">
       <div className="checkout-container">

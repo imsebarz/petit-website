@@ -6,7 +6,7 @@ import "./Header.scss";
 import { useStateValue } from "./CartContext";
 
 function Header() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
 
   return (
     <nav className="navbar">
