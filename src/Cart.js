@@ -17,6 +17,7 @@ const Cart = () => {
               id={item.id}
               price={item.price}
               img={item.img}
+              amount={item.amount}
             ></CartProduct>
           ))}
         </div>

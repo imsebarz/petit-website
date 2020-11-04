@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Product.scss";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useStateValue } from "./CartContext";
-import { ADD_TO_BASKET } from "./reducer";
+import { ADD_TO_BASKET, getAmount } from "./reducer";
 import CurrencyFormat from "react-currency-format";
 
 const Product = ({ title, description, price, img, id }) => {
   const [{ basket }, dispatch] = useStateValue();
-
   console.log(basket);
 
   const addToBasket = () => {

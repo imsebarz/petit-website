@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./Header.scss";
 import { useStateValue } from "./CartContext";
+import { getAmount } from "./reducer";
+import useOutsideClick from "./useOutsideClick";
 
 function Header() {
   const [{ basket }] = useStateValue();
+  const [open, setOpen] = useState(false);
+  const ref = useRef();
+
+  useOutsideClick(ref, () => {
+    setOpen(false);
+  });
+
+  const toggleDropdown = (e) => {
+    e.preventDefault();
+    setOpen(!open);
+  };
 
   return (
     <nav className="navbar">
@@ -14,9 +27,18 @@ function Header() {
         <h1 className="logo">Petit</h1>
       </Link>
       <ul className="navbar-links">
-        <Link to="/acerca">
-          <li>Acerca de Nosotros</li>
-        </Link>
+        <a ref={ref}>
+          <li onClick={toggleDropdown}>Acerca de Nosotros</li>
+          {open ? (
+            <ul className="dropdown">
+              <li>Trabajo</li>
+              <li>Más trabajo</li>
+              <li>Work</li>
+            </ul>
+          ) : (
+            ""
+          )}
+        </a>
         <Link to="/tienda">
           <li>Macarons</li>
         </Link>
@@ -35,7 +57,9 @@ function Header() {
           <Link to="/carrito">
             <li>
               <ShoppingCartIcon></ShoppingCartIcon>
-              {basket.length}
+              <span className={getAmount(basket) > 0 ? "basket-amount" : ""}>
+                {getAmount(basket)}
+              </span>
             </li>
           </Link>
         </div>

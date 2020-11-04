@@ -27,6 +27,25 @@
       height: 40px;
     }
   }
+  .dropdown {
+    position: absolute;
+    top: 3em;
+    width: 12em;
+    background-color: #ff4161;
+    color: white;
+    padding: 1em 0;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    li {
+      align-items: center;
+      background-color: #ff4161;
+      padding: 1em 0.8em 1em 1.5em;
+      width: 100%;
+    }
+    li:hover {
+      background-color: #ff617c;
+    }
+  }
 }
 
 a {
@@ -39,4 +58,18 @@ a {
   li {
     list-style: none;
   }
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.basket-amount {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ff4161;
 }
