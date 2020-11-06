@@ -5,6 +5,8 @@ import Header from "./Header";
 import Home from "./Home";
 import Cart from "./Cart";
 import Store from "./Store";
+import Footer from "./Footer";
+import Arma from "./Arma";
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
             <Cart></Cart>
           </Route>
           <Route path="/arma">
-            <h1>Aqui puedes armar tu macarron c:</h1>
+            <Arma></Arma>
           </Route>
           <Route path="/contacto">
             <h1>Inofrmacion de contacyp</h1>
@@ -34,6 +36,7 @@ function App() {
             <Home></Home>
           </Route>
         </Switch>
+        <Footer></Footer>
       </div>
     </Router>
   );

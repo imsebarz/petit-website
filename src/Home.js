@@ -8,6 +8,7 @@ import SwiperCore, {
   Scrollbar,
   A11y,
   Autoplay,
+  EffectFade,
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,13 +17,15 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
+import Footer from "./Footer";
+import { preferidos } from "./macarons";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]);
 
 const Home = () => {
   const slides = [
     "https://images.unsplash.com/photo-1513870931673-fa0ab3de2e09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-    "https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+    "https://images.unsplash.com/photo-1531594652722-292a43e752b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80",
     "https://images.unsplash.com/photo-1568926728897-5e20b503dc20?ixlib=rb-1.2.1&auto=format&fit=crop&w=748&q=80",
     "https://images.unsplash.com/photo-1570476922354-81227cdbb76c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80",
   ];
@@ -30,56 +33,38 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
-        <img className="logo" src="/images/logo.png" alt="" />
+        <img
+          className="logo"
+          src="/images/logo.png"
+          alt="Logo de Petit Macarons"
+        />
         <Swiper
-          // spaceBetween={50}
           slidesPerView={1}
-          // navigation
-          // pagination={{ clickable: true, color: "red" }}
+          effect="fade"
           autoplay={{ delay: 3500, disableOnInteraction: false }}
           loop={true}
-          // scrollbar={{ draggable: true }}
         >
           {slides.map((it) => (
             <SwiperSlide>
-              <img src={it} alt="" />
+              <img src={it} alt="Caja de Macarons" />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
       <h1 className="title">LOS PREFERIDOS</h1>
       <div className="row">
-        <Product
-          title="El Elegante"
-          price={20000}
-          description="Alguna cajita de macarons bien sabrosa"
-          img="holi.jpg"
-          id="1"
-        ></Product>{" "}
-        <Product
-          title="El Alegre"
-          price={20000}
-          description="Alguna cajita de macarons bien sabrosa"
-          img="como.jpg"
-          id="2"
-        ></Product>{" "}
-        <Product
-          title="El fresco"
-          price={20000}
-          description="Alguna cajita de macarons bien sabrosa"
-          img="estas.jpg"
-          id="3"
-        ></Product>
-        <Product
-          title="El Ligero"
-          price={20000}
-          description="Alguna cajita de macarons bien sabrosa"
-          img="bien.jpg"
-          id="4"
-        ></Product>
+        {preferidos.map((item) => (
+          <Product
+            title={item.name}
+            price={item.price}
+            description={item.description}
+            img={item.img}
+            id={item.id}
+          ></Product>
+        ))}
       </div>
       <div className="banner">
-        <img src="/images/como.jpg" alt="" />
+        <img src="/images/como.jpg" alt="Macarons" />
         <div className="banner-info">
           <h1>Conoce más de nuestras emociones</h1>
           <p>Un viaje al centro de la tierra</p>
@@ -88,6 +73,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

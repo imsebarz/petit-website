@@ -4,7 +4,7 @@
 }
 
 .home-container {
-  margin-top: 3em;
+  margin-top: calc(3em - 10px);
   height: 40vw;
   .logo {
     position: absolute;
@@ -72,7 +72,7 @@
     h1 {
       font-size: 6em;
       text-align: center;
-      color: aqua;
+      color: #ffff4a;
       line-height: 70px;
       margin-bottom: 0.5em;
     }

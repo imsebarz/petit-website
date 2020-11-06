@@ -8,10 +8,14 @@
   flex-direction: column-reverse;
   z-index: 1;
   .product-info {
-    padding: 1em;
+    padding: 1.5em;
     margin-top: -3em;
     h1 {
       font-size: 1.3em;
+      margin: 5px 0;
+    }
+    p {
+      margin-bottom: 18px;
     }
   }
   img {
@@ -23,7 +27,7 @@
   button {
     margin: auto;
     position: relative;
-    top: 65px;
+    top: 6em;
     left: 110px;
     background: rgb(255, 65, 97);
     color: white;

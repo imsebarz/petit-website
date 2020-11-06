@@ -16,10 +16,10 @@ const CartProduct = ({ id, img, title, price, amount }) => {
 
   return (
     <div className="cart-product">
-      <img src={`/images/${img}`} alt="" />
+      <img src={`/images/${img}`} alt="Macarons" />
       <div className="info">
         <h3>{title}</h3>
-        <p>{amount}</p>
+        <p>Cantidad: {amount}</p>
         <CurrencyFormat
           value={price}
           displayType={"text"}

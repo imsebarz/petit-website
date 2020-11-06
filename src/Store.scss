@@ -1,20 +1,37 @@
 .products {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
-  padding-top: 5em;
+  width: 100%;
   height: 100%;
-}
-
-.left {
-  width: 30%;
-  padding: 1em;
-  background: white;
-  border-radius: 15px;
-  height: max-content;
-  margin: 6em 2em;
+  margin: 0 4em;
 }
 
 .store {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  .swiper-container {
+    width: 100%;
+    height: 40vw;
+    text-align: center;
+    object-fit: cover;
+    .swiper-slide {
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brigthness(0.6);
+      }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #ffff4a;
+      margin: 2em;
+      font-weight: 900;
+    }
+    .swiper-pagination-bullet-active {
+      background: #ffff4a;
+    }
+  }
 }

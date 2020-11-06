@@ -1,5 +1,6 @@
 .cart {
   padding-top: 4em;
+  background: white;
 }
 
 .checkout-container {
@@ -11,8 +12,9 @@
 
 .checkout-left {
   height: max-content;
-  background-color: rgb(249, 255, 160);
-  width: 45%;
+  background-color: #ffff4a;
+  width: 50%;
+  padding-right: 3em;
   display: flex;
   border-radius: 15px;
   flex-direction: column;
@@ -24,14 +26,13 @@
 
 .checkout-rigth {
   height: max-content;
-  background-color: rgb(255, 102, 102);
+  background-color: #ffff4a;
   width: 30%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
   border-radius: 15px;
-  height: 100vh;
   flex-direction: column;
-  padding: 10em 2em;
+  padding: 5em 1em;
 }

@@ -1,0 +1,118 @@
+export const preferidos = [
+  {
+    name: "El Elegante",
+    price: 20000,
+    description: `Chocolate`,
+    img: "elegante.jpg",
+    id: 1,
+  },
+  {
+    name: "El Radiante",
+    price: 20000,
+    description: `Maracuyá`,
+    img: "radiante.jpg",
+    id: 1,
+  },
+  {
+    name: "El Fresco",
+    price: 40000,
+    description: `Limón`,
+    img: "fresco.jpg",
+    id: 1,
+  },
+  {
+    name: "El Exótico",
+    price: 20000,
+    description: `Mora`,
+    img: "exotico.jpg",
+    id: 1,
+  },
+];
+
+export const macarons = [
+  {
+    name: "El Elegante",
+    price: 20000,
+    description: `Chocolate`,
+    img: "elegante.jpg",
+    id: 1,
+  },
+  {
+    name: "El Radiante",
+    price: 20000,
+    description: `Maracuyá`,
+    img: "radiante.jpg",
+    id: 1,
+  },
+  {
+    name: "El Fresco",
+    price: 40000,
+    description: `Limón`,
+    img: "fresco.jpg",
+    id: 1,
+  },
+  {
+    name: "El Exótico",
+    price: 20000,
+    description: `Mora`,
+    img: "exotico.jpg",
+    id: 1,
+  },
+  {
+    name: "El Apasionado",
+    price: 20000,
+    description: `Red Velvet`,
+    img: "apasionado.jpg",
+    id: 1,
+  },
+  {
+    name: "El Fuerte",
+    price: 20000,
+    description: `Café`,
+    img: "fuerte.jpg",
+    id: 5,
+  },
+
+  {
+    name: "El Sincero",
+    price: 20000,
+    description: `Chicle`,
+    img: "sincero.jpg",
+    id: 1,
+  },
+  {
+    name: "El Tierno",
+    price: 20000,
+    description: `Fresa`,
+    img: "tierno.jpg",
+    id: 1,
+  },
+  {
+    name: "El Clásico",
+    price: 20000,
+    description: `Mezcla tradicional`,
+    img: "clasico.jpg",
+    id: 1,
+  },
+  {
+    name: "El Divertido",
+    price: 20000,
+    description: `Naranja`,
+    img: "divertido.jpg",
+    id: 1,
+  },
+  {
+    name: "El Ligero",
+    price: 20000,
+    description: `Mezcla tradicional sin Azucar`,
+    img: "ligero.jpg",
+    id: 1,
+  },
+  {
+    name: "El Inocente",
+    price: 20000,
+    description: `Vainilla`,
+    img: "inocente.jpg",
+    id: 1,
+  },
+];

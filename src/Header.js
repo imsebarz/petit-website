@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import "./Header.scss";
 import { useStateValue } from "./CartContext";
 import { getAmount } from "./reducer";
@@ -28,7 +29,9 @@ function Header() {
       </Link>
       <ul className="navbar-links">
         <a ref={ref}>
-          <li onClick={toggleDropdown}>Acerca de Nosotros</li>
+          <li onClick={toggleDropdown}>
+            Acerca de Nosotros<ExpandMoreIcon></ExpandMoreIcon>
+          </li>
           {open ? (
             <ul className="dropdown">
               <li>Trabajo</li>
