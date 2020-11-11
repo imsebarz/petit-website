@@ -17,7 +17,7 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
-import Footer from "./Footer";
+import Footer from "./Components/Footer";
 import { preferidos } from "./macarons";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]);
@@ -66,8 +66,8 @@ const Home = () => {
       <div className="banner">
         <img src="/images/como.jpg" alt="Macarons" />
         <div className="banner-info">
-          <h1>Conoce más de nuestras emociones</h1>
-          <p>Un viaje al centro de la tierra</p>
+          <h1>Dale color a tu personalidad</h1>
+          <p>#SOYCOLOR</p>
           <Link to="/tienda">
             <button>Nuestros Macarons</button>
           </Link>

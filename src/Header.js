@@ -1,41 +1,51 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "./Logo-blanco.svg";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import "./Header.scss";
 import { useStateValue } from "./CartContext";
 import { getAmount } from "./reducer";
-import useOutsideClick from "./useOutsideClick";
+import useOutsideClick from "./CustomHooks/useOutsideClick";
 
 function Header() {
   const [{ basket }] = useStateValue();
-  const [open, setOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
   const ref = useRef();
 
   useOutsideClick(ref, () => {
-    setOpen(false);
+    setOpenDropdown(false);
   });
 
   const toggleDropdown = (e) => {
     e.preventDefault();
-    setOpen(!open);
+    setOpenDropdown(!openDropdown);
+  };
+  const toggleSearch = (e) => {
+    e.preventDefault();
+    setOpenSearch(!openSearch);
   };
 
   return (
     <nav className="navbar">
       <Link to="/">
-        <h1 className="logo">Petit</h1>
+        <Logo></Logo>
       </Link>
       <ul className="navbar-links">
         <a ref={ref}>
           <li onClick={toggleDropdown}>
             Acerca de Nosotros<ExpandMoreIcon></ExpandMoreIcon>
           </li>
-          {open ? (
+          {openDropdown ? (
             <ul className="dropdown">
-              <li>Trabajo</li>
-              <li>Más trabajo</li>
+              <Link to="/aboutus/ofrecemos">
+                <li>¿Qué ofrecemos?</li>
+              </Link>
+              <Link to="/aboutus/dirigimos">
+                <li>¿A quien nos dirigimos?</li>
+              </Link>
               <li>Work</li>
             </ul>
           ) : (
@@ -51,9 +61,9 @@ function Header() {
         <Link to="/contacto">
           <li>Contacto</li>
         </Link>
-        <div className="icons">
+        <div className={openSearch ? "open-search icons" : "icons"}>
           <Link to="">
-            <li>
+            <li onClick={toggleSearch}>
               <SearchIcon></SearchIcon>
             </li>
           </Link>

@@ -1,0 +1,18 @@
+.contacto-container {
+  display: flex;
+  padding-top: 4em;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 40vw;
+  p {
+    margin-top: -3em;
+  }
+  .contactos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    width: 80%;
+  }
+}

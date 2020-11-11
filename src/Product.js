@@ -25,14 +25,16 @@ const Product = ({ title, description, price, img, id }) => {
     <div className="product">
       <div className="product-info">
         <h1>{title}</h1>
-        <p>{description}</p>
-        <CurrencyFormat
-          value={price}
-          displayType={"text"}
-          thousandSeparator={true}
-          prefix={"$"}
-          renderText={(value) => <strong>{value} COP</strong>}
-        />
+        <div className="price-desc">
+          <p>{description}</p>
+          <CurrencyFormat
+            value={price}
+            displayType={"text"}
+            thousandSeparator={true}
+            prefix={"$"}
+            renderText={(value) => <small>{value} COP</small>}
+          />
+        </div>
       </div>
       <button onClick={addToBasket}>
         <ShoppingCartIcon></ShoppingCartIcon>

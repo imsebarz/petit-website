@@ -8,26 +8,26 @@
   flex-direction: column-reverse;
   z-index: 1;
   .product-info {
-    padding: 1.5em;
-    margin-top: -3em;
+    margin-top: -2em;
     h1 {
-      font-size: 1.3em;
-      margin: 5px 0;
+      font-size: 1.2em;
     }
-    p {
-      margin-bottom: 18px;
+    .price-desc {
+      display: flex;
+      justify-content: space-between;
     }
   }
   img {
     width: 100%;
     object-fit: contain;
     border-radius: 5px 5px 0 0;
+    filter: saturate(0.8);
   }
 
   button {
     margin: auto;
     position: relative;
-    top: 6em;
+    top: -4em;
     left: 110px;
     background: rgb(255, 65, 97);
     color: white;
@@ -56,6 +56,6 @@
 .product:hover {
   img,
   button {
-    filter: brightness(1.2);
+    filter: brightness(1.1);
   }
 }

@@ -58,26 +58,30 @@
   margin: 1em;
   font-size: 3.5em;
   justify-content: center;
+  font-family: CovesBold;
 }
 
 .banner {
   height: 500px;
-  margin: 3em 0;
+  margin: 4em 0;
   .banner-info {
     position: relative;
     display: flex;
-    bottom: 75%;
+    bottom: 90%;
     flex-direction: column;
     align-items: center;
     h1 {
       font-size: 6em;
       text-align: center;
       color: #ffff4a;
-      line-height: 70px;
+      margin: 0 2em;
+      font-weight: 900;
       margin-bottom: 0.5em;
+      font-family: CenturyGothic;
     }
     p {
-      font-size: 3em;
+      font-size: 2em;
+      font-weight: 500;
       color: white;
     }
     button {

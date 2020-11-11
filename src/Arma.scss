@@ -1,9 +1,46 @@
 .arma {
-  background: rgb(240, 230, 255);
-  padding-top: 3em;
+  background: white;
+  padding-top: 4em;
   height: 50vw;
-}
-
-#arriba {
-  fill: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .select {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      select {
+        margin: 0.5em;
+        padding: 1em;
+        width: 80%;
+        background: #0ecdb6;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+        padding: 1.2em;
+      }
+      .botones {
+        width: 81%;
+        button {
+          background: #7f1882;
+          width: 30%;
+          padding: 1em;
+          color: white;
+          border: none;
+          border-radius: 15px;
+          margin: 0.5em;
+          outline: none;
+        }
+        button:hover {
+          background: #ad36b1;
+        }
+      }
+    }
+  }
 }

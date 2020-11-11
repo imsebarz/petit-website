@@ -1,0 +1,20 @@
+.no-match {
+  padding-top: 4em;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  button {
+    margin: 2em;
+    padding: 2em;
+    background: #0ecdb6;
+    font-weight: 900;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+  }
+  button:hover {
+    background: #3ef5df;
+  }
+}

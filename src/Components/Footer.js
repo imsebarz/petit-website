@@ -1,17 +1,24 @@
 import React from "react";
-import "./Footer.scss";
+import "../Footer.scss";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-info">
-        <img src="/images/logo.png" alt="Logo de Petit Macarons" />
+        <Link to="/">
+          <img src="/images/logo.png" alt="Logo de Petit Macarons" />
+        </Link>
         <ul>
-          <li>Trabajo</li>
-          <li>Más trabajo</li>
-          <li>Work</li>
-          <li>Contacto</li>
+          <Link to="/aboutus/ofrecemos">
+            <li>¿Qué ofrecemos?</li>
+          </Link>
+          <Link to="/aboutus/dirigimos">
+            <li>¿A quien nos dirigimos?</li>
+          </Link>
+          <Link to="/contacto">
+            <li>Contacto</li>
+          </Link>
         </ul>
         <div>
           <Link to="/tienda">
