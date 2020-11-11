@@ -10,14 +10,12 @@ const Dirigimos = () => {
       <InfoSquare
         title1="Variables Psicográficas"
         title2="Variables Conductuales"
-        text1="Aquellos quienes les guste probar cosas nuevas, sean amantes del
-        dulce, les guste ir a algun lugar cómodo a estudiar/trabajar o a
-        pasar el rato con amigos y acompañar bebidas como el café con un
-        pasabocas. Además les guste el color."
-        text2="Frecuencia de uso: De vez en cuando en la tarde, antes de entrar a
+        text1="Aquellos quienes les guste probar cosas nuevas, sean amantes del dulce, les guste ir a algun lugar cómodo a estudiar/trabajar o a pasar el rato con amigos y acompañar bebidas como el café con un pasabocas. Petit se dirige a un público con diferentes personalidades, pero que tienen en comun un gusto por el color y lo diferente."
+        text2="Frecuencia de uso: Ocasional - De vez en cuando en la tarde, antes de entrar a
         clase o al trabajo, un fin de semana en un plan de amigos/familia, o
         simplemente cuando se tiene un antojo."
         side="left"
+        image="conductuales.jpg"
       ></InfoSquare>
       <InfoSquare
         title1="Variables Geográficas"
@@ -32,6 +30,7 @@ const Dirigimos = () => {
           </ul>
         }
         side="rigth"
+        image="pollito.jpg"
       ></InfoSquare>
       <div className="producto">
         <h1 className="title">Tipo de bien</h1>

@@ -12,6 +12,32 @@
   flex-direction: column;
   width: 100%;
   overflow: hidden;
+
+  .info-rigth {
+    margin: 0;
+    width: 100%;
+    img {
+      display: none;
+    }
+    .title {
+      margin: 0.5em;
+    }
+  }
+
+  .producto {
+    margin: auto;
+    .title {
+      margin: 1em auto;
+      width: max-content;
+    }
+    h2 {
+      margin: 0.5em auto;
+    }
+    p {
+      text-align: center;
+    }
+  }
+
   .swiper-container {
     width: 100%;
     height: 40vw;

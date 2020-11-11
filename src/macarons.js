@@ -148,6 +148,13 @@ export const COLORES = {
 
 export const PRESENTACIONES = [
   {
+    name: "Individuales",
+    price: 2000,
+    description: `Elige tus preferidos`,
+    img: "1mac.jpg",
+    id: 3,
+  },
+  {
     name: "Caja de 6",
     price: 10000,
     description: `Ármala con tus preferidos`,

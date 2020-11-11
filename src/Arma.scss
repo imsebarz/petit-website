@@ -1,10 +1,27 @@
-.arma {
+.arma-container {
   background: white;
   padding-top: 4em;
-  height: 50vw;
+  height: max-content;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  .info {
+    h1 {
+      margin-bottom: 0.2em;
+    }
+  }
+}
+.arma {
+  display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
+  .macaron {
+    height: max-content;
+    svg {
+      height: 500px;
+    }
+  }
   .select {
     width: 50%;
     display: flex;

@@ -1,18 +1,55 @@
 .contacto-container {
   display: flex;
-  padding-top: 4em;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 40vw;
+  height: max-content;
+  padding-bottom: 6em;
   p {
-    margin-top: -3em;
+    margin: -3em auto auto auto;
+    width: max-content;
+  }
+  img {
+    width: 100%;
+    margin: calc(4em - 10px) 0;
   }
   .contactos {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin: 2em auto;
+    width: max-content;
+  }
+  .comunidad {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    .comunidad-info {
+      width: 50%;
+      margin: auto;
+      margin-top: 8em;
+      h1 {
+        margin-left: 0;
+      }
+      p {
+        margin: -3em 0 0 0;
+      }
+    }
+    img {
+      width: 25vw;
+      height: 45vw;
+      margin-right: 5em;
+    }
+    .contact-button {
+      margin-left: 0;
+      margin-top: 2em;
+    }
+  }
+
+  .sede {
     width: 80%;
+    margin: auto;
+    display: flex;
+    height: auto;
   }
 }

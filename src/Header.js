@@ -44,9 +44,8 @@ function Header() {
                 <li>¿Qué ofrecemos?</li>
               </Link>
               <Link to="/aboutus/dirigimos">
-                <li>¿A quien nos dirigimos?</li>
+                <li>¿A quién nos dirigimos?</li>
               </Link>
-              <li>Work</li>
             </ul>
           ) : (
             ""

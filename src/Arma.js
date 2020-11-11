@@ -37,29 +37,38 @@ const Arma = () => {
   };
 
   return (
-    <div className="arma">
-      <div className="macaron">
-        <Macaron
-          colorArriba={colorArriba}
-          colorAbajo={colorAbajo}
-          colorCentro={colorCentro}
-        ></Macaron>
+    <div className="arma-container">
+      <div className="info">
+        <h1 className="title">Arma tu Macaron</h1>
+        <p>
+          Dale personalidad a tus Macarons con los colores y sabores que más te
+          gusten.
+        </p>
       </div>
-      <div className="select">
-        <form onSubmit={changeColor}>
-          <p>Escoge el sabor de la galleta de arriba</p>
-          <ArribaDropdown />
-          <p>Escoge el sabor de la crema</p>
-          <CentroDropdown />
-          <p>Escoge el sabor de la galleta de abajo</p>
-          <AbajoDropdown />
-          <p>Escoje la cantidad</p>
-          <PresentacionDropdown />
-          <div className="botones">
-            <button>Seleccionar</button>
-            <button>Agregar al carrito</button>
-          </div>
-        </form>
+      <div className="arma">
+        <div className="macaron">
+          <Macaron
+            colorArriba={colorArriba}
+            colorAbajo={colorAbajo}
+            colorCentro={colorCentro}
+          ></Macaron>
+        </div>
+        <div className="select">
+          <form onSubmit={changeColor}>
+            <p>Escoge el sabor de la galleta de arriba</p>
+            <ArribaDropdown />
+            <p>Escoge el sabor de la crema</p>
+            <CentroDropdown />
+            <p>Escoge el sabor de la galleta de abajo</p>
+            <AbajoDropdown />
+            <p>Escoje la cantidad</p>
+            <PresentacionDropdown />
+            <div className="botones">
+              <button>Seleccionar</button>
+              <button>Agregar al carrito</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

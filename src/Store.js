@@ -77,7 +77,7 @@ const Store = () => {
             </li>
           </ol>
         }
-        text2="A partir de los anteriores factores, teniendo en cuenta todos los costes de producción (ingredientes, cajas, servicios publicos) y pensando también la clase a la que va dirigida el producto, establecimos los siguientes precios"
+        text2="A partir de los anteriores factores, teniendo en cuenta todos los costes de producción (ingredientes, cajas, servicios publicos) y pensando también la clase a la que va dirigida el producto, establecimos los siguientes precios:"
         side="rigth"
       ></InfoSquare>
       <h1 className="title">NUESTRAS PRESENTACIONES</h1>

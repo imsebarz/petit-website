@@ -1,0 +1,23 @@
+.contact-button {
+  width: max-content;
+  background: #ff4161;
+  margin: 10px;
+  height: max-content;
+  border-radius: 20px;
+  display: flex;
+  padding: 0.5em 1em;
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.2vw;
+    color: white;
+    svg {
+      font-size: 2vw;
+      margin: 0 0.3em 0 0;
+    }
+  }
+  .contact-button:hover div {
+    background: #f66b82;
+  }
+}
