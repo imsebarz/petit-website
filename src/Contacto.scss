@@ -34,6 +34,13 @@
       p {
         margin: -3em 0 0 0;
       }
+      .contactos {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        margin: 0;
+        width: max-content;
+      }
     }
     img {
       width: 25vw;

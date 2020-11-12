@@ -39,9 +39,17 @@ const Dirigimos = () => {
         <strong>Producto básico</strong>
         <p> Macarons</p>
         <strong>Producto Real o mejorado</strong>
-        <p>Macarons de colores, con nombres según cualidades</p>
+        <p>
+          Diferentes colores, sabores y personalidades de Macarons. Empaques
+          funcionales y atractivos. Tamaño ideal para un pequeño antojo.
+        </p>
         <strong>Producto Aumentado</strong>
-        <p>Personalización, encargos y envios por medio del sitio web</p>
+        <p>
+          Lugar cómodo y agradable para el consumo, funcionalidad para llevar,
+          para regalar o compartit con amigos, tienda en línea que ofrece la
+          posibilidad de personalización de los macarons y envíos a todo el
+          país.
+        </p>
       </div>
     </div>
   );

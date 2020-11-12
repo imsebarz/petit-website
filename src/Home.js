@@ -64,6 +64,11 @@ const Home = () => {
           ></Product>
         ))}
       </div>
+      <div className="gallery">
+        <img src="/images/coffee.png" alt="Macarons with Coffee" />
+        <img src="/images/motion.gif" alt="Motion Graphics Macarons" />
+        <img src="/images/influencer.jpg" alt="Greicy Rendón con Macarons" />
+      </div>
       <div className="banner">
         <img src="/images/como.jpg" alt="Macarons" />
         <div className="banner-info">
@@ -75,7 +80,7 @@ const Home = () => {
         </div>
       </div>
       <InfoSquare
-        title1="Conoce más de PETIT Macarons"
+        title1="Conoce más de Petit Macarons"
         text1={
           <Link to="/aboutus/ofrecemos">
             <button>Acerca de nostros</button>

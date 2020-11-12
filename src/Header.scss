@@ -80,10 +80,65 @@ a:hover {
   background-color: #ff4161;
 }
 
-.open-search {
+.open-search.icons {
   width: 20%;
-  a {
+  .search-icon {
+    margin-right: 1em;
+    margin-top: 1em;
+    margin: 1em 1em 1em 0;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
     background: white;
-    width: 50%;
+    svg {
+      fill: black;
+      margin-right: 0.5em;
+    }
+    input {
+      border: none;
+      outline: none;
+    }
+  }
+  .dropdown-search {
+    position: absolute;
+    top: 3em;
+    width: 15em;
+    background-color: white;
+    color: black;
+    padding: 1em 0;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    li {
+      align-items: center;
+      background-color: white;
+      padding: 1em 0.8em 1em 1.5em;
+      width: 100%;
+      color: black;
+    }
+    button {
+      margin: 1em;
+      background: rgb(255, 65, 97);
+      color: white;
+      border-radius: 50%;
+      width: 48px;
+      height: 35px;
+      border: 1px solid black;
+      outline: none;
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+        margin: auto;
+      }
+    }
+    button:hover {
+      background: rgb(251, 104, 128);
+    }
+    .search-product:hover {
+      a,
+      li {
+        background: #dbdbdb;
+      }
+    }
   }
 }

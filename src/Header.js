@@ -8,15 +8,27 @@ import "./Header.scss";
 import { useStateValue } from "./CartContext";
 import { getAmount } from "./reducer";
 import useOutsideClick from "./CustomHooks/useOutsideClick";
+import SearchProduct from "./Components/SearchProduct";
+import { macarons } from "./macarons.js";
+import { ListItemIcon } from "@material-ui/core";
 
 function Header() {
   const [{ basket }] = useStateValue();
   const [openDropdown, setOpenDropdown] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
-  const ref = useRef();
+  const [input, setInput] = useState("");
+  const refDropdown = useRef();
+  const refSearch = useRef();
+  const [searchMacarons, setSearchMacarons] = useState([]);
+  const namesMacarons = [];
+  macarons.forEach((it) => namesMacarons.push(it.name));
 
-  useOutsideClick(ref, () => {
+  useOutsideClick(refDropdown, () => {
     setOpenDropdown(false);
+  });
+
+  useOutsideClick(refSearch, () => {
+    setOpenSearch(false);
   });
 
   const toggleDropdown = (e) => {
@@ -28,13 +40,21 @@ function Header() {
     setOpenSearch(!openSearch);
   };
 
+  const updateSearch = (e) => {
+    setInput(e.target.value);
+    const filtered = namesMacarons.filter((item) => {
+      return item.toLowerCase().includes(input.toLowerCase());
+    });
+    setSearchMacarons(filtered);
+  };
+
   return (
     <nav className="navbar">
       <Link to="/">
         <Logo></Logo>
       </Link>
       <ul className="navbar-links">
-        <a ref={ref}>
+        <a ref={refDropdown}>
           <li onClick={toggleDropdown}>
             Acerca de Nosotros<ExpandMoreIcon></ExpandMoreIcon>
           </li>
@@ -61,11 +81,29 @@ function Header() {
           <li>Contacto</li>
         </Link>
         <div className={openSearch ? "open-search icons" : "icons"}>
-          <Link to="">
-            <li onClick={toggleSearch}>
-              <SearchIcon></SearchIcon>
+          <a className="search-icon" ref={refSearch}>
+            <li>
+              <SearchIcon onClick={toggleSearch}></SearchIcon>
+              {openSearch ? (
+                <input
+                  type="text"
+                  value={input}
+                  onChange={updateSearch}
+                ></input>
+              ) : (
+                ""
+              )}
             </li>
-          </Link>
+            {openSearch && searchMacarons.length > 0 ? (
+              <ul className="dropdown-search">
+                {searchMacarons.slice(0, 4).map((item) => (
+                  <SearchProduct name={item}></SearchProduct>
+                ))}
+              </ul>
+            ) : (
+              ""
+            )}
+          </a>
           <Link to="/carrito">
             <li>
               <ShoppingCartIcon></ShoppingCartIcon>

@@ -2,6 +2,7 @@ import React from "react";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import FacebookIcon from "@material-ui/icons/Facebook";
 import ContactButton from "./ContactButton";
 import "./Contacto.scss";
 
@@ -17,6 +18,10 @@ const Contacto = () => {
   const whatsapp = {
     logo: <WhatsAppIcon></WhatsAppIcon>,
     link: "https://api.whatsapp.com/send?phone=573196210875",
+  };
+  const facebook = {
+    logo: <FacebookIcon></FacebookIcon>,
+    link: "https://www.facebook.com/Petit-macarons-115686070349436",
   };
 
   return (
@@ -37,10 +42,16 @@ const Contacto = () => {
           <div className="comunidad-info">
             <h1 className="title">Unete a nuestra comunidad en Instagram</h1>
             <p>¡Visítanos!</p>
-            <ContactButton
-              title={"Instagram"}
-              media={instagram}
-            ></ContactButton>
+            <div className="contactos">
+              <ContactButton
+                title={"Instagram"}
+                media={instagram}
+              ></ContactButton>
+              <ContactButton
+                title={"Facebook"}
+                media={facebook}
+              ></ContactButton>
+            </div>
           </div>
         </div>
         <img src="/images/principal.png" className="banner sede" alt="" />
