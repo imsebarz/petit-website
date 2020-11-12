@@ -7,6 +7,9 @@
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  .copy-text {
+    text-align: center;
+  }
   .footer-info {
     display: flex;
     width: 100%;
@@ -19,6 +22,11 @@
     }
     a {
       color: white;
+      list-style: circle;
+      display: list-item;
+    }
+    .logo-footer {
+      display: flex;
     }
   }
 }

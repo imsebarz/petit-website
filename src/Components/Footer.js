@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-info">
-        <Link to="/">
+        <Link to="/" className="logo-footer">
           <img src="/images/logo.png" alt="Logo de Petit Macarons" />
         </Link>
         <ul>
@@ -29,7 +29,10 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <p>&copy; Copyrigth Petit 2020</p>
+      <div className="copy-text">
+        <p>&copy; Copyrigth Petit 2020</p>
+        <em>Petit no posee los derechos de las imagenes aqui mostradas</em>
+      </div>
     </div>
   );
 };

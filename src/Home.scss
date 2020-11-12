@@ -1,6 +1,45 @@
 .home {
   padding-top: 1em;
   overflow: hidden;
+  .info-rigth {
+    margin: 5vw 0;
+    padding: 0;
+    width: 100%;
+    height: 28vw;
+    .valor-text {
+      height: 100%;
+      margin: auto;
+      padding-left: 8em;
+      text-align: right;
+      h1 {
+        width: 8em;
+        margin: 1em 0 1em auto;
+        text-align: right;
+        font-family: CenturyGothic;
+      }
+      a {
+        display: inline;
+        button {
+          width: max-content;
+          background: #ff4161;
+          margin: 10px;
+          color: white;
+          height: max-content;
+          font-size: 0.6em;
+          border-radius: 20px;
+          padding: 1em;
+          border: 2px solid black;
+          outline: none;
+        }
+      }
+    }
+    img {
+      position: static;
+      width: 55%;
+      height: 100%;
+      transform: translate(0);
+    }
+  }
 }
 
 .home-container {

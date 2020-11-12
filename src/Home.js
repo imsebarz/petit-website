@@ -19,6 +19,7 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import Footer from "./Components/Footer";
 import { preferidos } from "./macarons";
+import InfoSquare from "./Components/InfoSquare";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]);
 
@@ -73,7 +74,16 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      {/* <Footer></Footer> */}
+      <InfoSquare
+        title1="Conoce más de PETIT Macarons"
+        text1={
+          <Link to="/aboutus/ofrecemos">
+            <button>Acerca de nostros</button>
+          </Link>
+        }
+        side="rigth"
+        image="relleno.gif"
+      ></InfoSquare>
     </div>
   );
 };
