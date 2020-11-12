@@ -40,7 +40,7 @@ const Contacto = () => {
         <div className="comunidad">
           <img src="/images/comunidad.gif" alt="" />
           <div className="comunidad-info">
-            <h1 className="title">Unete a nuestra comunidad en Instagram</h1>
+            <h1 className="title">Unete a nuestra comunidad en Redes</h1>
             <p>¡Visítanos!</p>
             <div className="contactos">
               <ContactButton
