@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cart.scss";
-import { useStateValue } from "./CartContext";
+import { useStateValue } from "../CartContext";
 import CartProduct from "./CartProduct";
 import Subtotal from "./Subtotal";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./Product";
+import Product from "../Product";
 import "./Store.scss";
 
 import SwiperCore, {
@@ -11,14 +11,14 @@ import SwiperCore, {
   EffectFade,
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { macarons, preferidos, PRESENTACIONES } from "./macarons";
+import { macarons, PRESENTACIONES } from "../macarons";
 
 // Import Swiper styles
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
-import InfoSquare from "./Components/InfoSquare";
+import InfoSquare from "../InfoSquare";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]);
 

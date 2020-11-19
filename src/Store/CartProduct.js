@@ -1,10 +1,11 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
-import { useStateValue } from "./CartContext";
+import { useStateValue } from "../CartContext";
 import "./CartProduct.scss";
-import { getAmount, REMOVE_FROM_BASKET } from "./reducer";
+import { REMOVE_FROM_BASKET } from "../reducer";
 
 const CartProduct = ({ id, img, title, price, amount }) => {
+  // eslint-disable-next-line
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {

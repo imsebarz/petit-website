@@ -1,10 +1,11 @@
 import React from "react";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import { macarons } from "../macarons";
-import { useStateValue } from "../CartContext";
-import { ADD_TO_BASKET } from "../reducer";
+import { macarons } from "./macarons";
+import { useStateValue } from "./CartContext";
+import { ADD_TO_BASKET } from "./reducer";
 
 const SearchProduct = ({ name }) => {
+  // eslint-disable-next-line
   const [{ basket }, dispatch] = useStateValue();
 
   const index = macarons.findIndex((x) => x.name === name);

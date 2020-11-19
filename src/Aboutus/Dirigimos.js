@@ -1,5 +1,5 @@
 import React from "react";
-import InfoSquare from "./Components/InfoSquare";
+import InfoSquare from "../InfoSquare";
 import "./Dirigimos.scss";
 
 const Dirigimos = () => {

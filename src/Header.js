@@ -8,9 +8,8 @@ import "./Header.scss";
 import { useStateValue } from "./CartContext";
 import { getAmount } from "./reducer";
 import useOutsideClick from "./CustomHooks/useOutsideClick";
-import SearchProduct from "./Components/SearchProduct";
+import SearchProduct from "./SearchProduct";
 import { macarons } from "./macarons.js";
-import { ListItemIcon } from "@material-ui/core";
 
 function Header() {
   const [{ basket }] = useStateValue();

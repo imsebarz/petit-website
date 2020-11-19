@@ -6,6 +6,7 @@ import { ADD_TO_BASKET } from "./reducer";
 import CurrencyFormat from "react-currency-format";
 
 const Product = ({ title, description, price, img, id }) => {
+  // eslint-disable-next-line
   const [{ basket }, dispatch] = useStateValue();
 
   const addToBasket = () => {
