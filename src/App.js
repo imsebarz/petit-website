@@ -9,14 +9,14 @@ import {
 import "./App.scss";
 import Header from "./Header";
 import Home from "./Home";
-import Cart from "./Cart";
-import Store from "./Store";
-import Footer from "./Components/Footer";
-import Arma from "./Arma";
-import Contacto from "./Contacto";
+import Cart from "./Store/Cart";
+import Store from "./Store/Store";
+import Footer from "./Footer";
+import Arma from "./Arma/Arma";
+import Contacto from "./Aboutus/Contacto";
 import NoMatch from "./NoMatch";
-import Ofrecemos from "./Ofrecemos";
-import Dirigimos from "./Dirigimos";
+import Ofrecemos from "./Aboutus/Ofrecemos";
+import Dirigimos from "./Aboutus/Dirigimos";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();

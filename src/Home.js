@@ -17,9 +17,8 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
-import Footer from "./Components/Footer";
 import { preferidos } from "./macarons";
-import InfoSquare from "./Components/InfoSquare";
+import InfoSquare from "./InfoSquare";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]);
 

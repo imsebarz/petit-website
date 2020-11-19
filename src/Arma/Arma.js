@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Arma.scss";
 import Macaron from "./Macaron.js";
-import { SABORES, COLORES, PRESENTACIONES } from "./macarons";
-import useDropdown from "./CustomHooks/useDropdown";
+import { SABORES, COLORES, PRESENTACIONES } from "../macarons";
+import useDropdown from "../CustomHooks/useDropdown";
 
 const Arma = () => {
   const namesPresentations = [];
@@ -19,6 +19,7 @@ const Arma = () => {
     "tradicional",
     SABORES
   );
+  // eslint-disable-next-line
   const [presentacion, PresentacionDropdown] = useDropdown(
     "Presentacion",
     "Caja de 6",

@@ -1,7 +1,7 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
-import { useStateValue } from "./CartContext";
-import { getSubtotal } from "./reducer";
+import { useStateValue } from "../CartContext";
+import { getSubtotal } from "../reducer";
 import "./Subtotal.scss";
 
 const Subtotal = () => {
