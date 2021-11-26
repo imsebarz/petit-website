@@ -3,13 +3,15 @@
   overflow: hidden;
   .gallery {
     width: 100%;
-    height: 30vw;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 5em 0;
     img {
-      height: 100%;
-      width: 33%;
+      height: 25em;
+      width: auto;
+      max-width: 25em;
       object-fit: cover;
     }
   }
@@ -18,17 +20,15 @@
     margin: 5vw 0;
     padding: 0;
     width: 100%;
-    height: 28vw;
+    height: auto;
+    display: flex;
     color: white;
     .valor-text {
       height: 100%;
       margin: auto;
-      padding-left: 6em;
-      text-align: right;
       h1 {
         width: 8em;
         margin: 1em 0 1em auto;
-        text-align: right;
         font-family: CovesBold;
       }
       a {
@@ -47,12 +47,6 @@
         }
       }
     }
-    img {
-      position: static;
-      width: 55%;
-      height: 100%;
-      transform: translate(0);
-    }
   }
 }
 
@@ -62,7 +56,7 @@
   .logo {
     position: absolute;
     height: 22vw;
-    width: 40vw;
+    width: auto;
     top: 25%;
     left: 0;
     right: 0;
@@ -108,21 +102,26 @@
 
 .title {
   display: flex;
-  margin: 1em;
+  margin: 1em auto;
+  width: 80%;
   font-size: 3.5em;
   justify-content: center;
   font-family: CovesBold;
 }
 
 .banner {
-  height: 500px;
+  height: 35em;
   margin: 4em 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   .banner-info {
-    position: relative;
+    grid-column: 1 / end;
+    grid-row: 1 / end;
     display: flex;
-    bottom: 90%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     h1 {
       font-size: 6em;
       text-align: center;
@@ -148,9 +147,38 @@
     }
   }
   img {
-    width: 101%;
+    grid-column: 1 / end;
+    grid-row: 1 / end;
+    width: 100%;
     height: 100%;
     filter: brightness(0.7);
     object-fit: cover;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-container {
+    height: 80vw;
+    .logo {
+      height: 40vw;
+    }
+  }
+
+  .title {
+    margin: 1em auto 1em auto;
+    font-size: 2.5em;
+  }
+
+  .banner {
+    height: 100vw;
+    .banner-info {
+      h1 {
+        font-size: 10vw;
+      }
+      p {
+        font-size: 5vw;
+      }
+    }
   }
 }

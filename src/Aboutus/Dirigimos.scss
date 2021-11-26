@@ -4,7 +4,7 @@
   padding-bottom: 5em;
   .banner {
     width: 100vw;
-    height: 30vw;
+    height: 100%;
     object-fit: cover;
     margin: 0;
   }
@@ -14,8 +14,12 @@
     color: white;
   }
 
+  .info-left {
+    flex-wrap: wrap;
+  }
+
   .title {
-    margin: auto;
+    margin: 1em auto;
     width: max-content;
   }
 }
@@ -54,5 +58,47 @@
   .title {
     margin: 1em;
     width: initial;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner,
+  .swiper-container {
+    height: 30em !important;
+  }
+  .dirigimos {
+    .info-left {
+      width: 100%;
+      padding: 2em;
+      margin: 5em 0;
+      justify-content: center;
+      img {
+        position: static;
+        width: 60%;
+        height: auto;
+      }
+    }
+    .info-rigth {
+      background: #ff4161;
+      color: white;
+      img {
+        width: 40%;
+        min-width: 400px;
+      }
+    }
+  }
+  .valor-text {
+    width: 100%;
+    padding: 2em;
+    justify-content: center;
+    text-align: center;
+    h2 {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .producto {
+    width: 100%;
+    padding: 2em;
   }
 }

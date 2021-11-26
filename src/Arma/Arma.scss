@@ -20,6 +20,7 @@
     height: max-content;
     svg {
       height: 500px;
+      width: 30vw;
     }
   }
   .select {
@@ -58,6 +59,23 @@
           background: #ad36b1;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .arma {
+    flex-direction: column;
+    .macaron {
+      display: flex;
+      justify-content: center;
+      svg {
+        width: 70%;
+        height: 20em;
+      }
+    }
+    .select {
+      width: 80%;
     }
   }
 }

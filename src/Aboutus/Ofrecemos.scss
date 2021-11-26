@@ -8,27 +8,62 @@
     object-fit: cover;
     margin: 0;
   }
-}
 
-.mision {
-  padding-top: 4em;
-  margin: 0 10em;
-  display: flex;
-  flex-direction: row-reverse;
-  .mision-text {
-    padding: 0 4em;
-    h1 {
-      justify-content: flex-start;
-      margin-left: 0;
-    }
-    p {
-      font-size: 1.2em;
+  .info-rigth {
+    .valor-text {
+      width: 40%;
+      margin: 4em;
     }
   }
-  img {
-    width: 30vw;
-    height: 30vw;
-    object-fit: cover;
-    margin: 0;
+
+  .mision {
+    padding-top: 4em;
+    margin: 3em;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    img {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+      margin: 0;
+    }
+    .mision-text {
+      padding: 0 4em;
+      width: 50%;
+      h1 {
+        justify-content: flex-start;
+        margin-left: 0;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ofrecemos {
+    .mision {
+      img {
+        width: 100%;
+      }
+      .mision-text {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .info-rigth {
+      .valor-text {
+        width: 100%;
+        margin: 2em;
+        text-align: justify;
+        .title {
+          width: 100%;
+          justify-content: center;
+          margin: 1em 0;
+        }
+      }
+    }
   }
 }

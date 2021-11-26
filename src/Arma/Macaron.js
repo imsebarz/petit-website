@@ -1,5 +1,4 @@
 import React from "react";
-import "./Macaron.scss";
 
 const Macaron = ({ colorArriba, colorAbajo, colorCentro }) => {
   return (

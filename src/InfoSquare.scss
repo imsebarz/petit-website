@@ -1,24 +1,25 @@
 .info-rigth {
-  margin: 5em 10em 5em 30em;
-  padding: 3em 10em;
   background: #ffff4a;
   display: flex;
-  width: 70%;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
   img {
-    width: 30vw;
-    height: 30vw;
-    position: absolute;
-    left: 8em;
-    transform: translateY(-20px);
     object-fit: cover;
     margin: 0;
+    height: auto;
+    width: 50%;
   }
   h1 {
     justify-content: flex-start;
     margin-left: 0;
+    text-align: center;
   }
   h2 {
     font-weight: 100;
+    text-align: center;
   }
 }
 
@@ -44,5 +45,13 @@
   }
   h2 {
     font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .info-rigth {
+    img {
+      width: 100vw;
+    }
   }
 }
