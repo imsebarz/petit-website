@@ -75,9 +75,6 @@ function Header() {
               <Link to="/aboutus/ofrecemos">
                 <li>¿Qué ofrecemos?</li>
               </Link>
-              <Link to="/aboutus/dirigimos">
-                <li>¿A quién nos dirigimos?</li>
-              </Link>
             </ul>
           ) : (
             ""
@@ -181,13 +178,6 @@ function Header() {
             <Link to="/aboutus/ofrecemos" href="">
               {" "}
               Que ofrecemos
-            </Link>
-          </li>
-          <li>
-            {" "}
-            <Link to="/aboutus/dirigimos" href="">
-              {" "}
-              A quien nos dirigimos
             </Link>
           </li>
         </ul>

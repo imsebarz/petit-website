@@ -66,10 +66,10 @@ const Home = () => {
       <div className="gallery">
         <img src="/images/coffee.png" alt="Macarons with Coffee" />
         <img src="/images/motion.gif" alt="Motion Graphics Macarons" />
-        <img src="/images/influencer.jpg" alt="Greicy Rendón con Macarons" />
+        <img src="/images/pollito.jpeg" alt="Greicy Rendón con Macarons" />
       </div>
       <div className="banner">
-        <img src="/images/como.jpg" alt="Macarons" />
+        <img src="/images/relleno.gif" alt="Macarons" />
         <div className="banner-info">
           <h1>Dale color a tu personalidad</h1>
           <p>#SOYCOLOR</p>
@@ -82,11 +82,11 @@ const Home = () => {
         title1="Conoce más de Petit Macarons"
         text1={
           <Link to="/aboutus/ofrecemos">
-            <button>Acerca de nostros</button>
+             <strong><button> Acerca de nostros</button></strong>
           </Link>
         }
         side="rigth"
-        image="relleno.gif"
+        image="petit.gif"
       ></InfoSquare>
     </div>
   );
