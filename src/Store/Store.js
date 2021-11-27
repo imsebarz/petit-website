@@ -55,31 +55,7 @@ const Store = () => {
           ></Product>
         ))}
       </div>
-      <InfoSquare
-        title1="Para asignar el precio se tiene en cuenta distintos factores:"
-        text1={
-          <ol>
-            <li>
-              El costo de la producción: Producir un solo macaron tiene un costo
-              muy bajo (aprox. $500) y más cuando se preparan masivamente.
-            </li>
-            <li>
-              La competencia: al ser dulces considerados refinados, los macarons
-              son vendidos a precios altos comparados con el valor de
-              producirlos. Una caja de 5 macarons puede se vendido en más de
-              $20.000 por la competencia. Sin embargo, Petit quiere tener un
-              precio más asequible para los clientes.
-            </li>
-            <li>
-              Empaquetamiento: Petit ofrece 3 presentaciones en cajas, entre más
-              grande sea la caja (con más cantidad de Macarons) sale más
-              económico el precio.
-            </li>
-          </ol>
-        }
-        text2="A partir de los anteriores factores, teniendo en cuenta todos los costes de producción (ingredientes, cajas, servicios publicos) y pensando también la clase a la que va dirigida el producto, establecimos los siguientes precios:"
-        side="rigth"
-      ></InfoSquare>
+
       <h1 className="title">NUESTRAS PRESENTACIONES</h1>
       <div className="products">
         {PRESENTACIONES.map((item) => (
@@ -91,21 +67,6 @@ const Store = () => {
             id={item.id}
           ></Product>
         ))}
-      </div>
-      <div className="producto">
-        <h1 className="title">Ajustes de precios</h1>
-        <h2>Promoción y Bonificación</h2>
-        <p>
-          Las cajas de petit están hechas en material amigable para el medio
-          ambiente y están diseñadas para que el cliente las reutilice. Si lleva
-          su caja en la siguiente compra, obtiene un 10% de descuento en su
-          pedido.
-        </p>
-        <p>
-          - Al presentar tarjeta de estudiante recibes un 10% de descuento en
-          macarons y café.
-        </p>
-        <em>Aplica solamente en tiendas físicas</em>
       </div>
     </div>
   );

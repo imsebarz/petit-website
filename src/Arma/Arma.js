@@ -40,7 +40,9 @@ const Arma = () => {
   return (
     <div className="arma-container">
       <div className="info">
-        <h1 className="title">Arma tu Macaron</h1>
+        <h1 className="title">
+          Arma tu Macaron
+        </h1>
         <p>
           Dale personalidad a tus Macarons con los colores y sabores que más te
           gusten.

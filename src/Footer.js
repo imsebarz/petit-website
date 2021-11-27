@@ -13,9 +13,6 @@ const Footer = () => {
           <Link to="/aboutus/ofrecemos">
             <p>¿Qué ofrecemos?</p>
           </Link>
-          <Link to="/aboutus/dirigimos">
-            <p>¿A quién nos dirigimos?</p>
-          </Link>
           <Link to="/contacto">
             <p>Contacto</p>
           </Link>

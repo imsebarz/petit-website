@@ -55,7 +55,7 @@ const Contacto = () => {
           </div>
         </div>
         <img src="/images/principal.png" className="banner sede" alt="" />
-        <img src="/images/dist.png" className="banner sede" alt="" />
+        {/* <img src="/images/dist.png" className="banner sede" alt="" /> */}
       </div>
     </div>
   );
