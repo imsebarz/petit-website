@@ -6,6 +6,7 @@ const Ofrecemos = () => {
   return (
     <div className="ofrecemos">
       <img className="banner" src="/images/petit2.jpg" alt="" />
+      <p className="intro">Somos una marca de color y personalidad, somos diversidad y sabor. Sabemos hacer macarons y experiencias inolvidables.</p>
       <div className="mision">
         <img src="/images/mision.jpg" alt="" />
         <div className="mision-text">

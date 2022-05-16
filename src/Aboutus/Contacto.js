@@ -26,13 +26,23 @@ const Contacto = () => {
 
   return (
     <div className="contacto-container">
-      <img src="/images/tienda.jpg" className="banner" alt="" />
+      <div className="banner-container">
+        <img src="/images/tienda.webp" className="banner" alt="" />
+        <div className="info">
+          <h1 className="title">Visita nuestra tienda</h1>
+          <button>Cómo llegar</button>
+        </div>
+      </div>
       <div className="contact-info">
-        <h1 className="title">¡Contáctanos!</h1>
-        <p>
-          Contacta a nuestro Petit para asesoría, preguntas de productos o para
-          convertirte en uno de nuestros distribuidores.
-        </p>
+        <div className="copy">
+          <h1 className="title">¡Contáctanos!</h1>
+          <p>
+            Contacta con nuestro equipo Petit para obetener información
+            personalizada sobre regalos corporativos o eventos. Si estas
+            interesado en ser uno de nuestros proveedores o si deseas distribuir
+            nuestros productos.
+          </p>
+        </div>
         <div className="contactos">
           <ContactButton title={"Whatsapp"} media={whatsapp}></ContactButton>
           <ContactButton title={"Email"} media={email}></ContactButton>
@@ -54,7 +64,7 @@ const Contacto = () => {
             </div>
           </div>
         </div>
-        <img src="/images/principal.png" className="banner sede" alt="" />
+        {/* <img src="/images/principal.png" className="banner sede" alt="" /> */}
         {/* <img src="/images/dist.png" className="banner sede" alt="" /> */}
       </div>
     </div>

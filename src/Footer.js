@@ -10,17 +10,20 @@ const Footer = () => {
           <img src="/images/logo.png" alt="Logo de Petit Macarons" />
         </Link>
         <ul>
-          <Link to="/aboutus/ofrecemos">
-            <p>¿Qué ofrecemos?</p>
-          </Link>
-          <Link to="/contacto">
-            <p>Contacto</p>
-          </Link>
           <Link to="/tienda">
             <p>Nuestros macarons</p>
           </Link>
           <Link to="/arma">
             <p>Arma tu macaron</p>
+          </Link>
+          <Link to="/marketplace">
+            <p>Tienda</p>
+          </Link>
+          <Link to="/aboutus/ofrecemos">
+            <p>¿Qué ofrecemos?</p>
+          </Link>
+          <Link to="/contacto">
+            <p>Contacto</p>
           </Link>
         </ul>
       </div>

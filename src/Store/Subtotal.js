@@ -14,7 +14,7 @@ const Subtotal = () => {
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}
-        renderText={(value) => <h3> Tu subtotal es: {value} COP</h3>}
+        renderText={(value) => <h3 className="title"> Tu subtotal es: {value} COP</h3>}
       />
       <button>Continuar compra</button>
     </div>

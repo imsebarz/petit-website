@@ -1,5 +1,7 @@
 .cart {
   padding-top: 4em;
+  min-height: 500px;
+  flex-direction: column;
   background: white;
 }
 
@@ -12,8 +14,8 @@
 
 .checkout-left {
   height: max-content;
-  background-color: #7f1882;
-  color: white;
+  background-color: transparent;
+  color: black;
   width: 50%;
   padding-right: 3em;
   display: flex;
@@ -27,14 +29,19 @@
 
 .checkout-rigth {
   height: max-content;
-  background-color: #7f1882;
-  color: white;
-  width: 30%;
+  background-color: none;
+  border: 3px solid #7f1882;
+  color: black;
+  width: 40%;
   display: flex;
+  position: sticky;
+  right: 50px;
+  top: 100px;
+  margin-top: 120px;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
   border-radius: 15px;
   flex-direction: column;
-  padding: 5em 1em;
+  padding: 2em 1em;
 }

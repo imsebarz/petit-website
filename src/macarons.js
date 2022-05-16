@@ -176,3 +176,58 @@ export const PRESENTACIONES = [
     id: 3,
   },
 ];
+
+
+
+export const products = [
+  {
+    name: "Camiseta",
+    price: 35000,
+    description: `Camiseta 100% algodón`,
+    img: "camisetaAmarilla.webp",
+    id: 1,
+  },
+  {
+    name: "Camiseta",
+    price: 35000,
+    description: `Camiseta 100% algodón`,
+    img: "camisetaVerde.webp",
+    id: 2,
+  },
+  {
+    name: "Llavero",
+    price: 10000,
+    description: `Llavero de cuero`,
+    img: "llavero.webp",
+    id: 6,
+  },
+  {
+    name: "Termo",
+    price: 20000,
+    description: `Termo de aluminio`,
+    img: "termo.webp",
+    id: 7,
+  },
+
+  {
+    name: "Mug",
+    price: 20000,
+    description: `Mug en peltre`,
+    img: "mug.webp",
+    id: 3,
+  },
+  {
+    name: "Mug",
+    price: 20000,
+    description: `Mug en peltre`,
+    img: "mugAmarillo.webp",
+    id: 4,
+  },
+  {
+    name: "Mug",
+    price: 20000,
+    description: `Mug en peltre`,
+    img: "mugMorado.webp",
+    id: 5,
+  },
+];

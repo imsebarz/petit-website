@@ -35,18 +35,10 @@ function Header() {
     }
   };
 
-  useOutsideClick(refDropdown, () => {
-    setOpenDropdown(false);
-  });
-
   useOutsideClick(refSearch, () => {
     setOpenSearch(false);
   });
 
-  const toggleDropdown = (e) => {
-    e.preventDefault();
-    setOpenDropdown(!openDropdown);
-  };
   const toggleSearch = (e) => {
     e.preventDefault();
     setOpenSearch(!openSearch);
@@ -66,25 +58,18 @@ function Header() {
         <Logo></Logo>
       </Link>
       <ul className="navbar-links">
-        <a ref={refDropdown}>
-          <li onClick={toggleDropdown}>
-            Acerca de Nosotros<ExpandMoreIcon></ExpandMoreIcon>
-          </li>
-          {openDropdown ? (
-            <ul className="dropdown">
-              <Link to="/aboutus/ofrecemos">
-                <li>¿Qué ofrecemos?</li>
-              </Link>
-            </ul>
-          ) : (
-            ""
-          )}
-        </a>
+
         <Link to="/tienda">
           <li>Macarons</li>
         </Link>
         <Link to="/arma">
           <li>Arma tu Macaron</li>
+        </Link>
+        <Link to="/marketplace">
+          <li>Tienda</li>
+        </Link>
+        <Link to="/aboutus">
+          <li>Acerca de nosotros</li>
         </Link>
         <Link to="/contacto">
           <li>Contacto</li>

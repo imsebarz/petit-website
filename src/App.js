@@ -17,6 +17,7 @@ import Contacto from "./Aboutus/Contacto";
 import NoMatch from "./NoMatch";
 import Ofrecemos from "./Aboutus/Ofrecemos";
 import Dirigimos from "./Aboutus/Dirigimos";
+import Marketplace from "./Marketplace/Marketplace";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -40,14 +41,14 @@ function App() {
             <Route path="/arma">
               <Arma></Arma>
             </Route>
+            <Route path="/marketplace">
+              <Marketplace></Marketplace>
+            </Route>
             <Route path="/contacto">
               <Contacto></Contacto>
             </Route>
-            <Route path="/aboutus/ofrecemos">
+            <Route path="/aboutus">
               <Ofrecemos></Ofrecemos>
-            </Route>
-            <Route path="/aboutus/dirigimos">
-              <Dirigimos></Dirigimos>
             </Route>
             <Route path="/login">
               <h1>I'm on LOGIN</h1>

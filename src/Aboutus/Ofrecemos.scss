@@ -2,11 +2,24 @@
   overflow-x: hidden;
   height: max-content;
   padding-bottom: 5em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   .banner {
     width: 100vw;
     height: 30vw;
     object-fit: cover;
     margin: 0;
+  }
+
+  .intro {
+    font-size: 1.5em;
+    margin-top: 100px;
+    font-style: italic;
+    text-align: center;
+    width: 50%;
+    font-weight: 300;
   }
   .valores {
     display: flex;

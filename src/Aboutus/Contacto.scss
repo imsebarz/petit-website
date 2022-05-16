@@ -5,10 +5,53 @@
   flex-direction: column;
   height: max-content;
   padding-bottom: 6em;
-  p {
-    margin: -3em auto auto auto;
-    width: max-content;
+  .copy {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
   }
+  .banner-container {
+    display: grid;
+    margin-top: 100px;
+    .banner {
+      grid-row: 1/-1;
+      grid-column: 1/-1;
+      margin: 0;
+      height: auto;
+      width: 100%;
+    }
+    .info {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      grid-row: 1/-1;
+      color: white;
+      button {
+        padding: 10px 20px;
+        background-color: #9e15a3;
+        color: white;
+        font-size: 1rem;
+        border-radius: 10px;
+        font-weight: 900;
+        border: none;
+      }
+      button:hover {
+        background-color: #ba2ebf;
+      }
+      h1 {
+        margin: 0px;
+      }
+    }
+  }
+
   img {
     width: 100%;
     margin: calc(4em - 10px) 0;
