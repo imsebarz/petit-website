@@ -74,40 +74,40 @@ function Header() {
         <Link to="/contacto">
           <li>Contacto</li>
         </Link>
-        <div className={openSearch ? "open-search icons" : "icons"}>
-          <a className="search-icon" ref={refSearch}>
-            <li>
-              <SearchIcon onClick={toggleSearch}></SearchIcon>
-              {openSearch ? (
-                <input
-                  type="text"
-                  value={input}
-                  onChange={updateSearch}
-                ></input>
-              ) : (
-                ""
-              )}
-            </li>
-            {openSearch && searchMacarons.length > 0 ? (
-              <ul className="dropdown-search">
-                {searchMacarons.slice(0, 4).map((item) => (
-                  <SearchProduct name={item}></SearchProduct>
-                ))}
-              </ul>
+      </ul>
+      <div className={openSearch ? "open-search icons" : "icons"}>
+        <a className="search-icon" ref={refSearch}>
+          <li>
+            <SearchIcon onClick={toggleSearch}></SearchIcon>
+            {openSearch ? (
+              <input
+                type="text"
+                value={input}
+                onChange={updateSearch}
+              ></input>
             ) : (
               ""
             )}
-          </a>
-          <Link to="/carrito">
-            <li>
-              <ShoppingCartIcon></ShoppingCartIcon>
-              <span className={getAmount(basket) > 0 ? "basket-amount" : ""}>
-                {getAmount(basket)}
-              </span>
-            </li>
-          </Link>
-        </div>
-      </ul>
+          </li>
+          {openSearch && searchMacarons.length > 0 ? (
+            <ul className="dropdown-search">
+              {searchMacarons.slice(0, 4).map((item) => (
+                <SearchProduct name={item}></SearchProduct>
+              ))}
+            </ul>
+          ) : (
+            ""
+          )}
+        </a>
+        <Link to="/carrito">
+          <li>
+            <ShoppingCartIcon></ShoppingCartIcon>
+            <span className={getAmount(basket) > 0 ? "basket-amount" : ""}>
+              {getAmount(basket)}
+            </span>
+          </li>
+        </Link>
+      </div>
       <div className={`hamburger ${isOpen}`} onClick={toggleSidebar}>
         <svg
           width="105"
